@@ -1,0 +1,39 @@
+body{
+  background-color: #1b2223;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0; 
+}
+
+.calculator{
+  border: dashed white;
+  background-color: black;
+  padding: .5em;
+  text-align: right;
+}
+
+.display{
+  border: solid white;
+  padding: .5em;
+  margin-bottom: .5em;
+  min-height: 20px;
+}
+
+button{
+background-color: #1b2223;
+color:white;
+padding: 1em 1.5em;
+margin: .5em;
+border-radius: 100px;
+border: transparent;
+cursor: pointer;
+width:45px;
+height:45px;
+}
+
+h1{
+  text-align: center;
+}

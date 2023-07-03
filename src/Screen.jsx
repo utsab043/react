@@ -1,6 +1,6 @@
 export const ScreenDisplay = ({text}) => {
 return(
-  <div>
+  <div className="display">
     {text}
   </div>
 )

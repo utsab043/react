@@ -7,10 +7,17 @@
 // Have only one parameter props
 
 //named export ko lagi yehi aghadi export
-const CalculatorBtn = ({text,handelClick}) =>{
-  //const { text , handelClick } = props; 
+const CalculatorBtn = ({text,handelClick,textcolor,bgcolor,textsize}) =>{
+  //const { text , handelClick } = props; object destructor
   return(
-    <button onClick={handelClick}>
+    <button onClick={handelClick} style={
+      {
+        color: textcolor,
+        backgroundColor: bgcolor,
+        fontSize: textsize, 
+      }
+    }
+    >
       {text}
     </button>
   )
