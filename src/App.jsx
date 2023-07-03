@@ -1,18 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import CalculatorBtn from './Button';
 import { ScreenDisplay } from './Screen';
 
 // named export ma chai {} vitra rakhnu
-function showNine(){}
 
 export const App = () => {
-  let ScreenText = "99999";
-  const DisplayText = (text) => {
-    ScreenText = text;
+  //let ScreenText = "99999";
+  const [ScreenText ,setScreenText] = useState(0);
+       const DisplayText = (text) => {
+    //ScreenText = text;
+    setScreenText(text);
+    console.log(ScreenText);
   }
   return (
-    <div> <ScreenDisplay text="9999"/>
+    <div> <screen text={ScreenText}/>
     <CalculatorBtn text="0" handelclick={()=>DisplayText(0)}/>
     <CalculatorBtn text="1" handelclick={()=>DisplayText(1)}/>
     <CalculatorBtn text="2" handelclick={()=>DisplayText(2)}/>
