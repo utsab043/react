@@ -1,6 +1,6 @@
  # Calculator using react 
 
-##To run this code:
+## To run this code:
 
 -First clone this repo in your local device using "git clone"<br>
 -Then open the terminal and type "npm i"<br>
