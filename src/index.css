@@ -10,7 +10,7 @@ body{
 
 .calculator{
   border: dashed white;
-  background-color: black;
+  background-color: rgb(36, 49, 48);
   padding: .5em;
   text-align: right;
 }
@@ -25,7 +25,7 @@ body{
 button{
 background-color: #1b2223;
 color:white;
-padding: 1em 1.5em;
+padding: 1em 1em;
 margin: .5em;
 border-radius: 100px;
 border: transparent;

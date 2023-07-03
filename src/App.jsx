@@ -32,35 +32,35 @@ export const App = () => {
     <h1>Calculator</h1>
     <ScreenDisplay text={ScreenText}/>
     <div>
-    <CalculatorBtn text="0" handelClick={()=>DisplayText(0)}/>
-    <CalculatorBtn text="1" handelClick={()=>DisplayText(1)}/>
-    <CalculatorBtn text="2" handelClick={()=>DisplayText(2)}/>
-    <CalculatorBtn text="3" handelClick={()=>DisplayText(3)}/>
+    <CalculatorBtn text="AC" handelClick={()=>DisplayText(Utility.CLEAR)}bgcolor="#ff000099"/>
+    <CalculatorBtn text="DEL" handelClick={()=>DisplayText(Utility.BACK)}bgcolor="#00800099"/>
+    <CalculatorBtn text="%" handelClick={()=>DisplayText("%")}bgcolor="#00800099"/>
+    <CalculatorBtn text="/" handelClick={()=>DisplayText("/")}bgcolor="#00800099"/>
     </div>
+    <div>
+    <CalculatorBtn text="7" handelClick={()=>DisplayText(7)}/>
+    <CalculatorBtn text="8" handelClick={()=>DisplayText(8)}/>
+    <CalculatorBtn text="9" handelClick={()=>DisplayText(9)}/>
+    <CalculatorBtn text="*" handelClick={()=>DisplayText("*")}bgcolor="#00800099"/>
+    </div>
+    
     <div>
     <CalculatorBtn text="4" handelClick={()=>DisplayText(4)}/>
     <CalculatorBtn text="5" handelClick={()=>DisplayText(5)}/>
     <CalculatorBtn text="6" handelClick={()=>DisplayText(6)}/>
-    <CalculatorBtn text="7" handelClick={()=>DisplayText(7)}/>
-    </div>
-    
-    <div>
-    <CalculatorBtn text="8" handelClick={()=>DisplayText(8)}/>
-    <CalculatorBtn text="9" handelClick={()=>DisplayText(9)}/>
-    <CalculatorBtn text="+" handelClick={()=>DisplayText("+")}/>
-    <CalculatorBtn text="-" handelClick={()=>DisplayText("-")}/>
+    <CalculatorBtn text="-" handelClick={()=>DisplayText("-")}bgcolor="#00800099"/>
     </div>
     <div>
-    <CalculatorBtn text="*" handelClick={()=>DisplayText("*")}/>
-    <CalculatorBtn text="/" handelClick={()=>DisplayText("/")}/>
-    <CalculatorBtn text="=" handelClick={()=>DisplayText("=")}/>
-    <CalculatorBtn text="<-" handelClick={()=>DisplayText(Utility.BACK)}/>
+    <CalculatorBtn text="1" handelClick={()=>DisplayText(1)}/>
+    <CalculatorBtn text="2" handelClick={()=>DisplayText(2)}/>
+    <CalculatorBtn text="3" handelClick={()=>DisplayText(3)}/>
+    <CalculatorBtn text="+" handelClick={()=>DisplayText("+")}bgcolor="#00800099"/>
     </div>
     <div>
-    <CalculatorBtn text="C" handelClick={()=>DisplayText(Utility.CLEAR)}textcolor="#ff0000"/>
+    <CalculatorBtn text="00" handelClick={()=>DisplayText("00")}/>
+    <CalculatorBtn text="0" handelClick={()=>DisplayText(0)}/>
     <CalculatorBtn text="." handelClick={()=>DisplayText(".")}/>
-    <CalculatorBtn text="(" handelClick={()=>DisplayText("(")}/>
-    <CalculatorBtn text=")" handelClick={()=>DisplayText(")")}/>
+    <CalculatorBtn text="=" handelClick={()=>DisplayText("=")}bgcolor="#FFA50099"/>
     </div>
     </div>
   )
