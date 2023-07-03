@@ -1,4 +1,4 @@
-Markup : # Calculator using react #
+ # Calculator using react 
 
 ##To run this code:##
 
