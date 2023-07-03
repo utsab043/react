@@ -6,15 +6,17 @@ import { ScreenDisplay } from './Screen';
 // named export ma chai {} vitra rakhnu
 // hook
 // component ma matra use huncha and not inside normal function also always starts with use keyword
-const CLEAR = "CLEAR";
-const BACK ="BACK";
+const Utility ={
+CLEAR : "CLEAR",
+BACK : "BACK",
+}
 export const App = () => {
   const [ScreenText ,setScreenText] = useState("");
        const DisplayText = (text) => {
-    if(text===CLEAR){
+    if(text===Utility.CLEAR){
       setScreenText("")
     }
-    else if(text===BACK){
+    else if(text===Utility.BACK){
       setScreenText((prev) => {
         return prev.slice(0, prev.length-1)
       })
@@ -52,10 +54,10 @@ export const App = () => {
     <CalculatorBtn text="*" handelClick={()=>DisplayText("*")}/>
     <CalculatorBtn text="/" handelClick={()=>DisplayText("/")}/>
     <CalculatorBtn text="=" handelClick={()=>DisplayText("=")}/>
-    <CalculatorBtn text="<-" handelClick={()=>DisplayText(BACK)}/>
+    <CalculatorBtn text="<-" handelClick={()=>DisplayText(Utility.BACK)}/>
     </div>
     <div>
-    <CalculatorBtn text="C" handelClick={()=>DisplayText(CLEAR)}textcolor="#ff0000"/>
+    <CalculatorBtn text="C" handelClick={()=>DisplayText(Utility.CLEAR)}textcolor="#ff0000"/>
     <CalculatorBtn text="." handelClick={()=>DisplayText(".")}/>
     <CalculatorBtn text="(" handelClick={()=>DisplayText("(")}/>
     <CalculatorBtn text=")" handelClick={()=>DisplayText(")")}/>
